@@ -15,7 +15,7 @@
   <a href="https://dicompute.ai"><img alt="Website" src="https://img.shields.io/badge/website-dicompute.ai-10141a?style=flat-square"></a>
   <a href="https://dicompute.ai/models"><img alt="API" src="https://img.shields.io/badge/API-OpenAI--compatible-2ce0a7?style=flat-square"></a>
   <a href="https://dicompute.ai/whitepaper"><img alt="Settlement" src="https://img.shields.io/badge/settlement-XDC-4de7ff?style=flat-square"></a>
-  <a href="https://x.com/dicompute"><img alt="X" src="https://img.shields.io/badge/follow-%40dicompute-10141a?style=flat-square&logo=x"></a>
+  <a href="https://x.com/dicomputeai"><img alt="X" src="https://img.shields.io/badge/follow-%40dicompute-10141a?style=flat-square&logo=x"></a>
 </p>
 
 <p align="center">
@@ -47,7 +47,7 @@ No account, no password, no credit card. Signup mints a key and real starting cr
 
 ```bash
 # 1 — mint a key
-curl -sS -X POST https://hey.dicompute.ai/api/signup \
+curl -sS -X POST https://dicompute.ai/api/signup \
   -H 'content-type: application/json' \
   -d '{"email":"you@example.com"}'
 # => {"apiKey":"sk-dico-...","account":"signup-...","startingBalanceUusd":100000}
@@ -57,7 +57,7 @@ curl -sS -X POST https://hey.dicompute.ai/api/signup \
 
 ```bash
 # 2 — stream a completion
-curl -sS -N https://hey.dicompute.ai/openai/v1/chat/completions \
+curl -sS -N https://dicompute.ai/openai/v1/chat/completions \
   -H "authorization: Bearer $DICO_KEY" \
   -H 'content-type: application/json' \
   -d '{"model":"qwen2.5-3b-instruct","stream":true,
@@ -70,14 +70,14 @@ Already using the OpenAI SDK? Change two lines:
 from openai import OpenAI
 
 client = OpenAI(
-    base_url="https://hey.dicompute.ai/openai/v1",
+    base_url="https://dicompute.ai/openai/v1",
     api_key="sk-dico-...",
 )
 ```
 
 ## Live models
 
-Queried from [`/openai/v1/models`](https://hey.dicompute.ai/openai/v1/models) — always
+Queried from [`/openai/v1/models`](https://dicompute.ai/openai/v1/models) — always
 resolve model ids from the API rather than hardcoding them.
 
 | Model | Input / Mtok | Output / Mtok | Notes |

@@ -21,7 +21,7 @@ Operator onboarding, hardware guidance, and earnings live at
 - **Bug in a public repository** — open an issue on that repository.
 - **Security vulnerability** — do **not** open an issue. See [SECURITY.md](SECURITY.md).
 - **Account, billing, or API access** — [dicompute.ai/console](https://dicompute.ai/console).
-- **General and partnerships** — [@dicompute](https://x.com/dicompute) on X.
+- **General and partnerships** — [@dicomputeai](https://x.com/dicomputeai) on X.
 
 Most DiCompute engineering happens in private repositories, so a public issue is
 not always the fastest route. For anything account-specific, start in the console.
