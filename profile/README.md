@@ -64,6 +64,10 @@ curl -sS -N https://dicompute.ai/openai/v1/chat/completions \
        "messages":[{"role":"user","content":"say OK"}]}'
 ```
 
+The full contract is published as an OpenAPI 3.1 spec in
+**[DICOMPUTE/openapi](https://github.com/DICOMPUTE/openapi)** — point Postman,
+Insomnia, or any code generator at it.
+
 Already using the OpenAI SDK? Change two lines:
 
 ```python
@@ -105,11 +109,16 @@ We take reports seriously and will not pursue researchers acting in good faith.
 - **Please don't** open a public issue for a vulnerability.
 - Full policy: [SECURITY.md](https://github.com/DICOMPUTE/.github/blob/main/SECURITY.md)
 
-## Around here
+## Repositories
 
-Most DiCompute engineering happens in private repositories. This organization's
-public surface is the product itself — the console, the API, and the docs linked
-above. Brand assets and usage rules live at [dicompute.ai/brand](https://dicompute.ai/brand).
+| Repo | What it is |
+|---|---|
+| **[openapi](https://github.com/DICOMPUTE/openapi)** | The API's OpenAPI 3.1 spec — 20 endpoints — plus runnable curl, Python and TypeScript quickstarts |
+| [.github](https://github.com/DICOMPUTE/.github) | This profile and the org's shared security, contributing, and support policies |
+
+Product engineering happens in private repositories; the public surface is the
+running service and the contract above. Brand assets and usage rules live at
+[dicompute.ai/brand](https://dicompute.ai/brand).
 
 <p align="center">
   <sub>Built on <a href="https://xinfin.org">XDC</a> · <a href="https://dicompute.ai/privacy">Privacy</a> · <a href="https://dicompute.ai/terms">Terms</a></sub>
