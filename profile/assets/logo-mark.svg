@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="DiCompute mark">
+  <!-- #497: the canonical mark -- a ring (independent GPU operators, the
+       decentralized supply) crossed by a bar (the one router that dispatches
+       to them). #3019: recolored onto the app's own live tokens. #3109:
+       redrawn for craft and 16px legibility, same concept, and the ring is
+       now OPEN where the bar passes through -- "Open GPU supply" is the
+       homepage's own value prop, and the gaps are also what stop the
+       monochrome variant reading as a slashed zero.
+
+       The geometry, so the next edit is a decision rather than a nudge:
+
+       * One 8-unit module: ring stroke = bar height = 8 = 1/8 of the 64-unit
+         canvas, so at 16px (favicon) every stroke is exactly 2px. The old
+         7-unit strokes landed on 1.75px and rasterised soft.
+       * Ring centreline radius 23 (band 19..27). Bar half-length 27 =
+         23 + 8/2, so the bar's round cap tips lie exactly on the mark's
+         54-unit outer silhouette circle and its cap centres sit exactly on
+         the ring's centreline: the route terminates ON the supply ring at
+         both ends, and the mark's silhouette stays a circle (survives
+         circular avatar crops). The old 44-unit bar ended mid-stroke,
+         buried under the ring band.
+       * Bar angle -atan(1/2) = -26.565deg, rising. A 2:1 slope rasterises
+         evenly at icon sizes (uniform two-across-one-up stair; the old
+         -32deg has no such alignment), sits well off the 45deg
+         prohibition-sign diagonal, and well off horizontal (a minus sign in
+         a circle). Rising, because falling diagonals are the "no entry"
+         convention.
+       * Gap half-opening asin(10/23) = 25.77deg per side: the four arc
+         endpoints sit 10 units perpendicular from the bar's axis, leaving
+         4.26 units of clear ground between bar edge and arc cut at the
+         narrowest point -- just over 1px at 16px, the smallest gap that
+         survives rasterisation. Each arc spans 128.5deg; butt caps, so the
+         cuts are radial. Endpoints are those exact intersections rounded to
+         2dp: (46.05,13.79)->(9,32.32) and (17.95,50.21)->(55,31.68).
+
+       Colors: ring = packages/ui/tokens.css --color-accent (dark theme
+       value, 13.08:1 on --color-bg), bar = --color-success (dark, 11.36:1).
+       A static SVG loaded via <img src> cannot read a CSS custom property,
+       so these are literal hex copies of those tokens, not var() references
+       -- apps/console/app/brand/brand-asset-colors.test.ts pins them equal
+       to tokens.css; keep them equal by hand if either token moves again.
+       scripts/build-brand-icons.ts and scripts/build-og-image.ts redraw
+       this same geometry in raster form (icon.png / favicon.ico / og.png)
+       -- change them together, then re-run both scripts. -->
+  <path d="M 46.05 13.79 A 23 23 0 0 0 9 32.32 M 17.95 50.21 A 23 23 0 0 0 55 31.68" fill="none" stroke="#4de7ff" stroke-width="8"/>
+  <rect x="5" y="28" width="54" height="8" rx="4" fill="#2ce0a7" transform="rotate(-26.565 32 32)"/>
+</svg>

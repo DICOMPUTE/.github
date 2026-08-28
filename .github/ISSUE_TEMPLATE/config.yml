@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/DICOMPUTE/.github/blob/main/SECURITY.md
+    about: Never file a vulnerability as a public issue. Use a private advisory or email security@dicompute.ai.
+  - name: Account, billing, or API key help
+    url: https://dicompute.ai/console
+    about: Anything account-specific is fastest to resolve in the console.
+  - name: Models and current pricing
+    url: https://dicompute.ai/models
+    about: Live model ids, capabilities, and per-token rates.
+  - name: Run GPUs and earn
+    url: https://dicompute.ai/earn
+    about: Operator onboarding, hardware guidance, and earnings.

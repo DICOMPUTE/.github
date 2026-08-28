@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" width="260" height="64" role="img" aria-label="DiCompute">
+  <!-- #497: horizontal lockup for a DARK background -- mark + wordmark.
+       #3019: recolored to the app's own dark-theme tokens -- see
+       logo-mark.svg for why these are literal hex, not var().
+       #3109: mark geometry redrawn (see logo-mark.svg's comment for the
+       full derivation) and the wordmark now reads "DiCompute" -- the product
+       name packages/config's PLATFORM_NAME has defaulted to since #2610; the
+       old "DiCo" here was a rebrand miss. Same two-tone split as before:
+       leading "Di" in the primary ink, the remainder in --color-success,
+       the same value the bar uses. viewBox widened 220->260 for the longer
+       word (Georgia at 34px sets "DiCompute" at ~163 units from x=72). -->
+  <path d="M 46.05 13.79 A 23 23 0 0 0 9 32.32 M 17.95 50.21 A 23 23 0 0 0 55 31.68" fill="none" stroke="#4de7ff" stroke-width="8"/>
+  <rect x="5" y="28" width="54" height="8" rx="4" fill="#2ce0a7" transform="rotate(-26.565 32 32)"/>
+  <text x="72" y="43" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#e9edec">Di<tspan fill="#2ce0a7">Compute</tspan></text>
+</svg>

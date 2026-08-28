@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" width="260" height="64" role="img" aria-label="DiCompute">
+  <!-- #497: the inverse lockup, for a LIGHT background. #3019/#3023: mark and
+       text recolored onto the real light-theme tokens (see those issues'
+       notes in git history for the AA retuning). #3109: mark geometry
+       redrawn (see logo-mark.svg's comment for the full derivation) and the
+       wordmark now reads "DiCompute", same reasoning as logo-lockup.svg.
+       Colors: ring = light --color-accent (#007385, 5.24:1 on --color-bg
+       #f7f9f8), bar/"Compute" = light --color-success (#13815e, 4.59:1),
+       "Di" = light --color-text-primary. Literal hex because a static SVG
+       cannot resolve var() -- brand-asset-colors.test.ts pins each value
+       equal to tokens.css. -->
+  <path d="M 46.05 13.79 A 23 23 0 0 0 9 32.32 M 17.95 50.21 A 23 23 0 0 0 55 31.68" fill="none" stroke="#007385" stroke-width="8"/>
+  <rect x="5" y="28" width="54" height="8" rx="4" fill="#13815e" transform="rotate(-26.565 32 32)"/>
+  <text x="72" y="43" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#10141a">Di<tspan fill="#13815e">Compute</tspan></text>
+</svg>
