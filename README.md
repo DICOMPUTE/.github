@@ -18,3 +18,7 @@ templates keep them.
 
 This repository is public so the org profile renders for everyone. It contains
 documentation only: no source, no configuration, no secrets.
+
+## License
+
+MIT, Copyright (c) 2026 DICOMPUTE (Anil Chinchawale). See [LICENSE](LICENSE). A pull request here is contributed under the same licence.
